@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tester</title>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="ngD3.min.js"></script>
+</head>
+<body ng-app="test" ng-controller="test">
+  <div ng-show="d3">Current version number: {{ d3.version }}</div>
+  <div ng-hide="d3">Failing test :(</div>
+  <script>
+    angular.module('test',['ngD3'])
+      .controller('test', ['$scope', '$d3', function ($scope, $d3) {
+        if ($d3) $scope.d3 = $d3;
+      }]);
+  </script>
+</body>
+</html>
