@@ -4,7 +4,7 @@
   "authors": [
     "zzmp <zmp@umich.edu>"
   ],
-  "description": "A D3 wrapper, the angular way. Delegates D3 to model ngD3, with factory $d3, to keep it out of the global scope.",
+  "description": "A d3 wrapper, the angular way. Delegates D3 to model ngD3, with factory $d3, to keep it out of the global scope.",
   "main": "ngD3.min.js",
   "keywords": [
     "d3",
