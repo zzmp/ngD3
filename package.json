@@ -4,7 +4,7 @@
   "description": "A d3 wrapper, the angular way.",
   "main": "test_server.js",
   "scripts": {
-    "test": "node test_server.js"
+    "test": "node_modules/karma/bin/karma start"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/zzmp/ngD3",
   "dependencies": {
-    "express": "^4.3.0"
+    "express": "^4.3.0",
+    "karma": "^0.12.16"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5"
   }
 }
